@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+       <button id="myBtn" onclick=func1()>Sign Up</button>
+       <button id="myBtn1" onclick=func2()>Sign In</button>
+       <p id="ab">ScriBBler</p>
+       <p id="ac">Explore, Imagine, Create</p>
+        </div>
+
+        <div class="postButtons">
+               <button onclick="func5();">All Posts</button>
+               <button>Create Post</button>
+        </div>
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Sign In modal here -->
+      <div id="myModal1" class="modal">
+  <div class="modal-content">
+    <span class="close1">&times;</span>
+    <form>
+     <div class="container">
+    <h1><center>Welcome Back!<center></h1>
+    <hr>
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Full Name" name="name" required>
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+      <button type="submit" class="signupbtn">Sign In</button>
+      <p><center>Not a member?<span class="man" onclick=func3()>Sign up</span><center></p>
+  </div>
+  </form>
+  </div>
+
+</div>
+
+    </div>
+
+    <div>
+
+    	<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form>
+     <div class="container">
+    <h1><center>Get Started<center></h1>
+    <hr>
+    <label><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="name" required>
+
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter username" name="username" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <label><b>Confirm Password</b></label>
+    <input type="password" placeholder="confirm Password" name="password1" required>
+      <button type="submit" class="signupbtn">Sign Up</button>
+  </div>
+  </form>
+  </div>
+
+</div>
+
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Create Post modal here -->
+
+    </div>
+
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+</html>

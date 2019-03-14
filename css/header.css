@@ -1,0 +1,27 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button,
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+@font-face {
+  font-family:"mee";
+  src: url("MarckScript-Regular.ttf") format("truetype");
+}
+.header button{
+  float:right;
+  background-color: blue;
+  width: 75px;
+  height:35px;
+  color:white;
+  margin: 5px;
+}
+.header #ab{
+  font-family:'satisfy';
+  color:blue;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+.header #ac{
+margin-top: 0px;
+  font-family:'mee';
+  margin-left: 5px;
+}
