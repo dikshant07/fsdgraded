@@ -1,12 +1,14 @@
 .post {
     position: relative;
-    width: 40%;
-    height: 10%;
+    width: 34%;
+    height: 20%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
     margin: 10px 10px 10px 20px;
     float:left;
     border-radius: 15px;
+
+
 }
 
 .post-left {
@@ -27,14 +29,18 @@
         border-radius: 0 15px 15px 0;
         padding: 0 20px;
         overflow: hidden;
-        line-height: 1.5;
+        line-height: 1.2;
+        padding-bottom: 5px;
+
+
 }
 .post-title{
     font-family: 'Itim', cursive;
     font-weight: bold;
     color: #2b312b;
-    font-size: 22px;
-    height: 22px;
+    font-size: 25px;
+    height: 25px;
+
     }
 .post-more {
     float: right;
@@ -46,8 +52,16 @@
     font-size: 30px;
 }
 .post-desc{
-    height: 100px;
-    margin-bottom: 0 !important;
+   margin-bottom: 0 !important;
+    display: -webkit-box;
+  max-width: 96%;
+  height: 55px;
+  margin: 10px 0px 0px 0px;
+  font-size: 15px;
+    line-height: 1.2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 body {
@@ -61,19 +75,20 @@ body {
 .allPostsContainer {
     height: 100%;
     width: 100%;
-    display: flex;;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-flow: wrap;
+    margin: 20px;
 
 
 }
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -83,74 +98,71 @@ body {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
+  margin: 8% auto; /* 15% from the top and centered */
+  padding-left: 20px;
+    padding-right: 20px;
   border: 1px solid #888;
-  width: 30%;
+  width: 50%;
+
 }
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+@media only screen and (max-width : 1000px )
+{
+    .post-title{
+        font-size: 17px;
+    }
 }
-.container hr{
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-  width:100%;
+
+@media only screen and (max-width: 700px) {
+
+    .post {
+        width:80%;
+    }
+    .post-title{
+        font-size: 20px;}
 }
+
+@media only screen and (max-width: 480px) {
+
+        .post-title{
+        font-size: 16px;}
+    }
+
 /* The Close Button */
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.man{
-  color:red;
-}
-.man:hover{
-  cursor:pointer;
-  color:green;
-  text-decoration: none;
-}
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-.close1 {
-  color: #aaaaaa;
+  color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close1:hover,
-.close1:focus {
-  color: #000;
+.close:hover,
+.close:focus {
+  color: black;
   text-decoration: none;
   cursor: pointer;
 }
-.container{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
+#modalheading{
+    font-size: 25px;
+    font-family:  Arial;
 }
-.signupbtn{
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  float:left;
-  opacity: 0.9;
+* {
+  box-sizing: border-box;
+}
+.container{
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+
+hr {
+  border: 1px solid grey;
+margin-bottom: 15px;
+    width: 100%;
 }
 input[type=text], input[type=password] {
   width: 100%;
@@ -160,16 +172,129 @@ input[type=text], input[type=password] {
   border: none;
   background: #f1f1f1;
 }
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+
 input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
-.abc{
-  float:right;
-  margin-top: 8px;
+.nsignup{
+  text-align: center;
 }
-.abd{
-  float:right;
+.signinbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 25px;
+    padding-top: 10px;
+  border: none;
+  cursor: pointer;
+    height: 30px;
+  width: 100%;
+  opacity: 0.9;
+
+}
+
+.signinbtn:hover {
+  opacity: 1;
+}
+.signupbtn{
+   background-color: #4CAF50;
+  color: white;
+  padding: 25px;
+    padding-top: 10px;
+  border: none;
+  cursor: pointer;
+    height: 30px;
+  width: 100%;
+  opacity: 0.9;
+  opacity: 0.9;
+}
+.signupbtn:hover {
+  opacity: 1;
+}
+#container1{
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+#trash{
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#trash2{
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#trash3{
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#trash4{
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#trash5{
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#ellipsis{
+    float: right;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.delmodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.delmodal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+  height: 22%;
+}
+#delp
+{
+    padding-top: 5px;
+    text-align: center;
+}
+#yesbtn{
+    float:left;
+    border: 1px solid transparent;
+    background-color: #dc3545;
+    border-color: #dc3545;
+        border-radius: .25rem;
+    cursor: pointer;
+    width: 30%;
+    height: 30px;
+  margin-left:30px;
+    text-align: center;
+    color: white;
+}
+#nobtn{
+    float:right;
+    border: 1px solid transparent;
+     background-color: #218838;
+    border-color: #218838;
+        border-radius: .25rem;
+    width: 30%;
+    height: 30px;
+    cursor: pointer;
+     margin-right: 30px;
+    text-align: center;
+    color: white;
 }

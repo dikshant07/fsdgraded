@@ -1,25 +1,22 @@
-function func1(){
+function func2()
+{
+    var modal=document.getElementById('myModal');
+    var modal1=document.getElementById('signupmodal');
+    modal1.style.display="block";
+    modal.style.display="none";
+}
 var modal = document.getElementById('myModal');
-var span = document.getElementsByClassName("close")[0];
-  modal.style.display = "block";
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-}
-function func2(){
-var modal = document.getElementById('myModal1');
+// Get the button that opens the modal
+var btn = document.getElementById("signin");
+
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close1")[0];
-  modal.style.display = "block";
+var span = document.getElementsByClassName("close")[0];
 
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -32,24 +29,37 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+//For signup modal
+var m = document.getElementById('signupmodal');
+
+// Get the button that opens the modal
+var b = document.getElementById("SignUp");
+
+// Get the <span> element that closes the modal
+var s = document.getElementsByClassName("close")[1];
+
+// When the user clicks on the button, open the modal 
+b.onclick = function() {
+  m.style.display = "block";
 }
-function func3(){
-var modal = document.getElementById('myModal');
-var modal1 = document.getElementById('myModal1');
-modal1.style.display = "none";
-modal.style.display = "block";
-var span = document.getElementsByClassName("close")[0];
-span.onclick = function() {
-  modal.style.display = "none";
+
+// When the user clicks on <span> (x), close the modal
+s.onclick = function() {
+  m.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == m) {
+    m.style.display = "none";
   }
 }
+function func1()
+{
+ window.location.href="html/bloglist.html";
 }
-function func5(){
-  window.location.href="html/bloglist.html";
-}
+
+var f=document.getElementById('tagline');
+f.style.fontSize='14px';

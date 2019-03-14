@@ -16,69 +16,68 @@
     <div id="main-container-div">
 
         <div class="header">
-       <button id="myBtn" onclick=func1()>Sign Up</button>
-       <button id="myBtn1" onclick=func2()>Sign In</button>
-       <p id="ab">ScriBBler</p>
-       <p id="ac">Explore, Imagine, Create</p>
-        </div>
+            <button id="SignUp">Sign Up</button>
+            <button id="signin">Sign In</button>
+            <p id="scribbler">ScriBBler</p>
+            <p id="tagline">Explore,Imagine,Create</p>
+            
 
+        </div>
+           
         <div class="postButtons">
-               <button onclick="func5();">All Posts</button>
-               <button>Create Post</button>
+            <button id="all-posts" onclick="func1()"><b>All Posts</b></button>
+            <button id="create-post"><b>Create Post</b></button>	
+
         </div>
     </div>
 
-    <div>
+ <div id="myModal" class="modal">
 
-    	<!-- Insert code for Sign In modal here -->
-      <div id="myModal1" class="modal">
-  <div class="modal-content">
-    <span class="close1">&times;</span>
-    <form>
-     <div class="container">
-    <h1><center>Welcome Back!<center></h1>
-    <hr>
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Full Name" name="name" required>
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="password" required>
-      <button type="submit" class="signupbtn">Sign In</button>
-      <p><center>Not a member?<span class="man" onclick=func3()>Sign up</span><center></p>
-  </div>
-  </form>
-  </div>
-
-</div>
-
-    </div>
-
-    <div>
-
-    	<div id="myModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <form>
-     <div class="container">
-    <h1><center>Get Started<center></h1>
-    <hr>
-    <label><b>Full Name</b></label>
-    <input type="text" placeholder="Enter Full Name" name="name" required>
-
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter username" name="username" required>
-
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="password" required>
-    <label><b>Confirm Password</b></label>
-    <input type="password" placeholder="confirm Password" name="password1" required>
-      <button type="submit" class="signupbtn">Sign Up</button>
+    <form id="modalform">
+        <div class="container">
+        <center><p id="modalheading">Welcome Back!</p></center>
+        <hr>
+        <label for="Username"><b>Username</b></label>
+        <input type="text" id="email" placeholder="Enter Username" required><br>
+        <label for="Password"><b>Password</b></label>
+        <input type="password" id="password" placeholder="Enter Password" required><br>
+        <button type="submit" class="signinbtn">Sign In</button>
+        </div>
+        <div class="nsignup">
+            <p><b>Not a member? </b><span onclick="func2()">Sign Up</span></p>
   </div>
-  </form>
+    </form>
   </div>
 
-</div>
+   </div>
 
-    </div>
+   
+    <div id="signupmodal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form id="signupform">
+        <div id="container1">
+        <center><p id="modalheading">Get Started!</p></center>
+        <hr>
+        <label for="Signupname"><b>Full Name</b></label>
+        <input type="text" id="fullname" placeholder="Enter Full Name" required><br>
+        <label for="SignupUsername"><b>Username</b></label>
+        <input type="text" id="signupemail" placeholder="Enter Username" required><br>
+        <label for="signupPassword"><b>Password</b></label>
+        <input type="password" id="signuppassword" placeholder="Enter Password" required><br>
+           <label for="signupconfirmPassword"><b>Password</b></label>   
+        <input type="password" id="signupcnfpassword" placeholder="Confirm Password" required><br>
+        <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+  
+  
+    </form>
+  </div>
+
+   </div>
 
     <div>
 
