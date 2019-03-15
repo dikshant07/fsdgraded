@@ -1,29 +1,45 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
-.header button
-{
-    float:right;
-    background-color: blue;
+#signup,#signin {
+    float: right;
     color: white;
-    height: 30px;
-    margin: 5px;
-    width: 70px;
+    background-color: blue;
+    padding: 10px;
+    margin: 13px 3px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    border-radius: 6px;
 }
-#scribbler{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 5px;
-    font-family: 'Satisfy';
-    font-size: 40px;
-    color: blue;
+#bar {
+    display: none;
 }
-.header p{
-     margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 5px;
-    font-family: "Marck Script";
+#logo {
+    text-decoration: none;
+    font-family: 'satisfy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color :blue;
+}
+.header {
+    padding: 13px;
+}
+#logo2 {
+    font-family: 'Cookie';
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px;
+    margin-top: 5px;
 }
-
-/* Set a style for the rest of the elements besides the header elements on the index.html page */
-                                 
+@media only screen and (max-width: 400px) {
+    #signup,#signin  {
+       padding: 5px;
+    margin: 13px 3px;
+    }
+    #logo{
+        font-size: 40px;
+    }
+    #logo2 {
+        font-size: 13px;
+    }
+}

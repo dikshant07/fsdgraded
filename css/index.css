@@ -8,134 +8,78 @@ body{
    background-size: 100% cover!important;
    overflow:hidden;
    display: block;
-    
+    padding: 0px;
 } 
-
-.postButtons
-{
+.postButtons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    height: 68vh;
-}
-.postButtons button{
-    margin: 5px;
-    width:100px;
-    height: 35px;
-    background-color: #cfd53b;
-    color: black;
+    position:fixed;
+    width:100%;
+    height:40%;
     
 }
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+#ntmmbr {
+    margin: 0px;
 }
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 8% auto; /* 15% from the top and centered */
-  padding-left: 20px;
-    padding-right: 20px;
-  border: 1px solid #888;
-  width: 30%; 
- 
+#bot {
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
 }
-
-/* The Close Button */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    background-color:#818181;
 }
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+label {
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
 }
-#modalheading{
-    font-size: 25px;
-    font-family:  Arial;
+.h5,h5 {
+   font-family: 'Abel' !important;
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 27px !important;
 }
-* {
-  box-sizing: border-box;
+#exampleInputPost1 {
+    background-color: #f1f1f1 !important;
+    resize: none;
 }
-.container{
-display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-   
+input {
+    background-color: #f1f1f1 !important;
 }
-
-hr {
-  border: 1px solid grey;
-margin-bottom: 15px; 
+#Cpost,#Spost {
+    padding: 10px;
+    margin: 7px;
+    font-weight: 600;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    width: 110px;
+     color: black;
+    background-color:#fbc531;
+    border-radius: 6px;
+}
+.modal-header {
+        border-bottom: 3px solid #d2d2d2 !important;
+        margin: 0px 15px;
+}
+.modal-title{
+    text-align: center;
     width: 100%;
 }
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
+.inbtn {
+    width: 100%;
+    padding: 5px;
+    margin-top: 12px;
 }
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-.nsignup{
-  text-align: center;
-}
-.signinbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 25px;
-    padding-top: 10px;
-  border: none;
-  cursor: pointer;
-    height: 30px;
-  width: 100%;
-  opacity: 0.9;
-
-}
-
-.signinbtn:hover {
-  opacity: 1;
-}
-.signupbtn{
-   background-color: #4CAF50;
-  color: white;
-  padding: 25px;
-    padding-top: 10px;
-  border: none;
-  cursor: pointer;
-    height: 30px;
-  width: 100%;
-  opacity: 0.9;  
-  opacity: 0.9;  
-}
-.signupbtn:hover {
-  opacity: 1;
-}
-#container1{
-    box-sizing: border-box;
-    margin-bottom: 20px;
+.modal-dialog {
+    top: 10%;
 }
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
                                  
